@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.gzsoft.basedatos_ulp.Principal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent"
+android:id="@+id/lvlista">
+
+    <TextView
+        android:text="@string/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvnombre" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:id="@+id/tvapellido"
+        android:layout_alignBottom="@+id/etapellido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Telefono"
+        android:id="@+id/tvtelefono"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/etapellido"/>
+    
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:ems="30"
+        android:id="@+id/etnombre"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvtelefono"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:id="@+id/etapellido"
+        android:layout_below="@+id/etnombre"
+        android:layout_alignLeft="@+id/etnombre"
+        android:layout_alignStart="@+id/etnombre"/>
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:id="@+id/ettelefono"
+        android:layout_alignBottom="@+id/tvtelefono"
+        android:layout_alignLeft="@+id/etapellido"
+        android:layout_alignStart="@+id/etapellido" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Guardar"
+        android:id="@+id/btguardar"
+        android:layout_below="@+id/ettelefono"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginTop="35dp"/>
+
+
+
+
+</RelativeLayout>
