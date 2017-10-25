@@ -3,7 +3,7 @@
     package="com.gzsoft.basedatos_ulp">
 
     <application
-        android:name=".application.BaseApplication"
+        android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,7 +21,7 @@
         </activity>
         <activity 
             android:name=".ListActivity"
-            android:label="@string/title_activity_list">
+            android:label="Titulo label">
             
         </activity>
     </application>

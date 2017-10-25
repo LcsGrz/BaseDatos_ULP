@@ -10,7 +10,7 @@ public class DBAdapter {
     private SQLiteDatabase sqlDB;
 
     private final static int DB_VERSION = 1;
-    private final static String DB_NAME = "AdminSoft0";
+    private final static String DB_NAME = "AdminSoft";
 
     private ClienteAdapter cliente;
     private ProyectoAdapter proyecto;
